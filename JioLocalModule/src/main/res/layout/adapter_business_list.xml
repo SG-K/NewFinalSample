@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:paddingTop="@dimen/space_10"
+        android:paddingLeft="@dimen/space_6"
+        android:paddingRight="@dimen/space_6"
+>
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/space_50"
+            android:layout_height="@dimen/space_50"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/im_bussines_logo"
+
+    />
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/rl_call"
+    >
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/space_25"
+                android:layout_height="@dimen/space_25"
+                android:id="@+id/im_call_logo"
+                app:srcCompat="@drawable/ic_call"
+                android:layout_margin="@dimen/space_10"
+
+        />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/im_bussines_logo"
+            app:layout_constraintRight_toLeftOf="@+id/rl_call"
+            android:text="SAmple Business name"
+            android:id="@+id/tv_business_name"
+            android:gravity="left"
+
+            android:layout_marginLeft="@dimen/space_16"
+            android:textSize="16sp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_marginLeft="@dimen/space_16"
+            app:layout_constraintRight_toLeftOf="@+id/rl_call"
+            app:layout_constraintLeft_toRightOf="@+id/im_bussines_logo"
+            app:layout_constraintTop_toBottomOf="@+id/tv_business_name"
+            android:id="@+id/ll_tvs_middle"
+    >
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rating"
+                android:textColor="#a09f9f"
+                android:gravity="left"
+                tools:text=" 4.1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                android:textSize="13sp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lay_stars"
+                app:layout_constraintBaseline_creator="@+id/ll_tvs_middle"
+                app:layout_constraintLeft_toRightOf="@+id/tv_rating"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="12sp"
+                    android:layout_height="12sp"
+                    android:id="@+id/im_star"
+                    android:layout_marginTop="@dimen/space_2"
+                    app:srcCompat="@drawable/ic_star_color"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+            />
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="12sp"
+                    android:layout_height="12sp"
+                    android:id="@+id/im_star2"
+                    android:layout_marginTop="@dimen/space_2"
+                    app:srcCompat="@drawable/ic_star_color"
+                    app:layout_constraintLeft_toRightOf="@+id/im_star"
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+            />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="12sp"
+                    android:layout_height="12sp"
+                    android:id="@+id/im_star3"
+                    android:layout_marginTop="@dimen/space_2"
+                    app:srcCompat="@drawable/ic_star_color"
+                    app:layout_constraintLeft_toRightOf="@+id/im_star2"
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+            />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="12sp"
+                    android:layout_height="12sp"
+                    android:id="@+id/im_star4"
+                    android:layout_marginTop="@dimen/space_2"
+                    app:srcCompat="@drawable/ic_star_color"
+                    app:layout_constraintLeft_toRightOf="@+id/im_star3"
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+            />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="12sp"
+                    android:layout_height="12sp"
+                    android:id="@+id/im_star5"
+                    android:layout_marginTop="@dimen/space_2"
+                    app:srcCompat="@drawable/ic_star_color"
+                    app:layout_constraintLeft_toRightOf="@+id/im_star4"
+                    app:layout_constraintTop_toTopOf="parent"
+
+
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_rating_count"
+                android:textColor="#a09f9f"
+                android:gravity="left"
+                tools:text=" (101)"
+                app:layout_constraintBaseline_creator="@+id/ll_tvs_middle"
+                app:layout_constraintLeft_toRightOf="@+id/lay_stars"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="13sp"/>
+        <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_distance"
+                android:textColor="#a09f9f"
+                android:gravity="left"
+                tools:text="  |  1.8Kms"
+                app:layout_constraintBaseline_creator="@+id/ll_tvs_middle"
+                app:layout_constraintLeft_toRightOf="@+id/tv_rating_count"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="13sp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_16"
+            android:layout_marginTop="@dimen/space_5"
+            app:layout_constraintRight_toLeftOf="@+id/rl_call"
+            app:layout_constraintLeft_toRightOf="@+id/im_bussines_logo"
+            app:layout_constraintTop_toBottomOf="@+id/ll_tvs_middle"
+
+            android:id="@+id/tv_business_addrs"
+            android:textColor="#a09f9f"
+            android:gravity="left"
+            android:text="SAmple Business "
+            android:textSize="13.5sp"/>
+
+    <View android:layout_width="match_parent"
+          android:layout_height="0.5dp"
+          android:background="@color/top_bar_icons_color_rc"
+          android:layout_marginTop="@dimen/space_12"
+          app:layout_constraintTop_toBottomOf="@+id/tv_business_addrs"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

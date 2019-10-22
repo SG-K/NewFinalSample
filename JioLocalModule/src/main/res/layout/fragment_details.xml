@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/space_130"
+                android:layout_height="@dimen/space_80"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/im_logo"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ic_logo"
+        />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/im_logo"
+                android:id="@+id/card_tvs"
+
+                android:layout_margin="@dimen/space_20"
+        >
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lay_edts"
+                    android:padding="@dimen/space_14"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+            >
+
+                <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/space_24"
+                        android:layout_height="@dimen/space_24"
+                        android:id="@+id/im_left_header"
+                        app:srcCompat="@drawable/ic_search"
+                        android:layout_marginLeft="@dimen/space_10"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"/>
+
+
+                <com.m.samplelibb.utils.TextViewPlus
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Search for anything 2222"
+                        android:textColor="@color/color_black_757575"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="@dimen/space_12"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toRightOf="@+id/im_left_header"
+                />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.m.samplelibb.utils.TextViewPlus
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/top_bar_icons_color"
+                android:textSize="14sp"
+                android:layout_margin="@dimen/space_16"
+                android:gravity="center"
+                android:text="Powered by JioBoomer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card_tvs"
+                app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

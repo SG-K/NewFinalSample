@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="0.5dp"
+            android:color="@color/top_bar_icons_color_rc" />
+    <solid android:color="@color/colorTransparent" />
+</shape>
